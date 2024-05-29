@@ -1,4 +1,37 @@
+
+
 #include <iostream>
+#include "DynamicArray.h"
+
+//배열을 대체
+//1. 생성 및 추가
+//2. 삭제
+//3. 삽입
+
+//4. 개수
+//5. 탐색(검색)
+//6. 출력
+
+
+int main()
+{
+	DynamicArray array{};
+
+	CreateMonster(array, "Wolf", 100, 0);
+	CreateMonster(array, "Demon", 200, 100);
+
+	std::cout << GetMonsterCount(array) << std::endl;
+	PrintMonsters(array);
+
+	std::cout << FindMonsters(array, "Wolf") << std::endl;
+
+	DeleteMonster(array, "Wolf");
+	PrintMonsters(array);
+
+	DeleteMonster(array, "Demon");
+}
+
+
 
 // LIFO : Last In First Out - STACK
 // FIFO : First In First Out - QUEUE
@@ -26,20 +59,3 @@
 //		}
 //	}
 //}
-
-struct Bullet
-{
-	int damage;
-	float speed;
-	float size;
-
-	Bullet *pNext;
-};
-
-int main()
-{
-	Bullet *a = new Bullet;
-	Bullet *b = new Bullet;
-
-	a->pNext = b;
-}
