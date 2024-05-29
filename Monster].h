@@ -17,7 +17,7 @@ struct Monster2
 	int hp;
 	int mp;
 
-	Monster
+	Monster2 *pNext;
 };
 
 
