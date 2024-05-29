@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "DynamicArray.h"
+#include "SingleLinkedList.h"
 
 //배열을 대체
 //1. 생성 및 추가
@@ -15,7 +16,7 @@
 
 int main()
 {
-	DynamicArray array{};
+	/*DynamicArray array{};
 
 	CreateMonster(array, "Wolf", 100, 0);
 	CreateMonster(array, "Demon", 200, 100);
@@ -28,7 +29,8 @@ int main()
 	DeleteMonster(array, "Wolf");
 	PrintMonsters(array);
 
-	DeleteMonster(array, "Demon");
+	DeleteMonster(array, "Demon");*/
+	SingleLinkedListTest();
 }
 
 

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Monster].h"
+#include <cstring>
 
 struct DynamicArray
 {
@@ -21,7 +22,7 @@ void CreateMonster(DynamicArray& array, const char* name, int hp, int mp)
 	array.pArray = temp;
 
 	Monster &m = array.pArray[array.size];
-	strcpy_s(m.name, NAME_LENGTH, name);
+	strncpy(m.name, name, NAME_LENGTH);
 	m.name[NAME_LENGTH - 1] = '\0';
 	m.hp = hp;
 	m.mp = mp;

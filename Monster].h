@@ -11,6 +11,13 @@ struct Monster
 	int mp;
 };
 
+struct Monster2
+{
+	char name[NAME_LENGTH];
+	int hp;
+	int mp;
 
+	Monster
+};
 
 
